@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #container {
+      width: 30%;
+      display: block;
+      margin: auto;
+      margin-top: 0px;
+      border: 0px solid black;
+
+    }
+
+    form {
+      width: 100%;
+    }
+    form>input{
+      width: 70%;
+      margin-left: 60px;
+      margin-bottom: 14px;
+      padding: 10px;
+    }
+    #register-form>button{
+       margin-left: 180px;
+       padding: 10px 30px 10px 30px;
+       background-color: white;
+       border: 2px solid rgb(84, 190, 236);
+       color:rgb(84, 190, 236) ;
+    }
+    #register-form>button:hover{
+      background-color: rgb(84, 190, 236);
+      color: white;
+    }
+    #login-form>button{
+       margin-left: 180px;
+       padding: 10px 30px 10px 30px;
+       background-color: white;
+       margin-bottom: 20px;
+       border: 2px solid rgb(84, 190, 236);
+       color:rgb(84, 190, 236) ;
+    }
+    #login-form>button:hover{
+      background-color: rgb(84, 190, 236);
+      color: white;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <div id="register-form">
+        <h1>Register</h1>
+        <form id="reg_form">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" />
+          <input type="text" id="username" placeholder="Username" />
+          <input type="text" id="password" placeholder="Password" />
+          <input type="text" id="mobile" placeholder="Mobile" />
+          <input type="text" id="description" placeholder="Description" />
+        </form>
+
+        <button onclick="Register()">Register</button>
+      </div>
+
+      <div id="login-form">
+        <h1>Login</h1>
+        <form>
+          <input type="text" id="login-username" placeholder="Username" />
+
+          <input type="text" id="login-password" placeholder="Password" />
+        </form>
+
+        <button onclick="Login()">Login</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./auth.js"></script>
